@@ -1,0 +1,1315 @@
+[ 2017-07-09T19:02:41+08:00 ] ::1 /test/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001445s ]
+
+[ 2017-07-09T19:10:46+08:00 ] ::1 /test/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+
+[ 2017-07-09T19:11:52+08:00 ] ::1 /test/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+
+[ 2017-07-09T19:12:12+08:00 ] ::1 /test/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000681s ]
+
+[ 2017-07-09T19:20:31+08:00 ] ::1 /test/index.php/Home/Excel/loadPriceFloatExcel
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+ERR: 无法加载控制器:Excel
+
+[ 2017-07-09T19:21:19+08:00 ] ::1 /test/index.php/Home/Excel/loadPriceFloatExcel
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+ERR: 无法加载控制器:Excel
+
+[ 2017-07-09T19:21:28+08:00 ] ::1 /test/index.php/Home/Excel/loadPriceFloatExcel
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+ERR: 无法加载控制器:Excel
+
+[ 2017-07-09T19:23:20+08:00 ] ::1 /test/index.php/Home/Excel/loadPriceFloatExcel
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+ERR: 无法加载控制器:Excel
+
+[ 2017-07-09T19:23:35+08:00 ] ::1 /test/index.php/Home/Excel/loadPriceFloatExcel
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+ERR: 无法加载控制器:Excel
+
+[ 2017-07-09T19:24:29+08:00 ] ::1 /test/index.php/Home/Excel/loadPriceFloatExcel
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+ERR: 无法加载控制器:Excel
+
+[ 2017-07-09T19:25:49+08:00 ] ::1 /test/index.php/Home/Excel/loadPriceFloatExcel
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+ERR: 无法加载控制器:Excel
+
+[ 2017-07-09T19:25:52+08:00 ] ::1 /test/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0484s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0145s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013314s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000526s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000551s ]
+
+[ 2017-07-09T19:25:52+08:00 ] ::1 /test/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0005s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004834s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004866s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000452s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000476s ]
+
+[ 2017-07-09T19:25:53+08:00 ] ::1 /test/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0005s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004799s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004832s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000451s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000476s ]
+
+[ 2017-07-09T19:26:32+08:00 ] ::1 /test/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0005s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044508s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044550s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000421s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000443s ]
+
+[ 2017-07-09T19:27:21+08:00 ] ::1 /test/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000466s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0005s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013098s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013141s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000465s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000490s ]
+
+[ 2017-07-09T19:27:21+08:00 ] ::1 /test/index.php/Home/Index/editGmAndSkillRatio
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0005s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031851s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031891s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000323s ]
+
+[ 2017-07-09T19:37:53+08:00 ] ::1 /test/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0004s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005191s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005224s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000593s ]
+
+[ 2017-07-09T19:39:23+08:00 ] ::1 /test/index.php/Home/Index/editGmAndSkillRatio
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0006s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0005s ]
+ERR: The filename C:\Windows\Temp\php83B2.tmp is not recognised as an OLE file
+
+[ 2017-07-09T19:41:42+08:00 ] ::1 /test/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0005s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006218s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006260s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000557s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000590s ]
+
+[ 2017-07-09T19:41:48+08:00 ] ::1 /test/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0005s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005327s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005376s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000562s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000588s ]
+
+[ 2017-07-09T19:41:56+08:00 ] ::1 /test/index.php/Home/Index/editGmAndSkillRatio
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0005s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0010s ]
+ERR: The filename C:\Windows\Temp\phpD5FF.tmp is not recognised as an OLE file
+
+[ 2017-07-09T19:42:04+08:00 ] ::1 /test/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0005s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005696s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005749s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000583s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000610s ]
+
+[ 2017-07-09T19:42:05+08:00 ] ::1 /test/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000740s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0017s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005477s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005508s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000576s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000599s ]
+
+[ 2017-07-09T19:42:10+08:00 ] ::1 /test/index.php/Home/Index/editGmAndSkillRatio
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0005s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: A E:\www\test\Application\Home\Controller\IndexController.class.php 第 42 行.
+NOTIC: [8] Undefined index: E E:\www\test\Application\Home\Controller\IndexController.class.php 第 46 行.
+NOTIC: [8] Undefined index: F E:\www\test\Application\Home\Controller\IndexController.class.php 第 47 行.
+NOTIC: [8] Undefined variable: condition E:\www\test\Application\Home\Controller\IndexController.class.php 第 48 行.
+NOTIC: [8] Undefined index: A E:\www\test\Application\Home\Controller\IndexController.class.php 第 42 行.
+NOTIC: [8] Undefined index: E E:\www\test\Application\Home\Controller\IndexController.class.php 第 46 行.
+NOTIC: [8] Undefined index: F E:\www\test\Application\Home\Controller\IndexController.class.php 第 47 行.
+NOTIC: [8] Undefined variable: condition E:\www\test\Application\Home\Controller\IndexController.class.php 第 48 行.
+NOTIC: [8] Undefined index: A E:\www\test\Application\Home\Controller\IndexController.class.php 第 42 行.
+NOTIC: [8] Undefined index: E E:\www\test\Application\Home\Controller\IndexController.class.php 第 46 行.
+NOTIC: [8] Undefined index: F E:\www\test\Application\Home\Controller\IndexController.class.php 第 47 行.
+NOTIC: [8] Undefined variable: condition E:\www\test\Application\Home\Controller\IndexController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004347s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004381s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000607s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000647s ]
+
+[ 2017-07-09T19:42:11+08:00 ] ::1 /test/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0004s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005514s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005561s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000613s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000640s ]
+
+[ 2017-07-09T19:42:12+08:00 ] ::1 /test/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000601s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0005s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005257s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005304s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000574s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000601s ]
+
+[ 2017-07-09T19:44:42+08:00 ] ::1 /test/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0004s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005035s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005065s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000552s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000576s ]
+
+[ 2017-07-09T19:44:47+08:00 ] ::1 /test/index.php/Home/Index/editGmAndSkillRatio
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0004s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: condition E:\www\test\Application\Home\Controller\IndexController.class.php 第 48 行.
+NOTIC: [8] Undefined variable: condition E:\www\test\Application\Home\Controller\IndexController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000048s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004117s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004149s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000558s ]
+
+[ 2017-07-09T19:44:48+08:00 ] ::1 /test/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001438s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0008s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004866s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004909s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000536s ]
+
+[ 2017-07-09T19:45:12+08:00 ] ::1 /test/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000578s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0004s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005021s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005053s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000568s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000591s ]
+
+[ 2017-07-09T19:45:18+08:00 ] ::1 /test/index.php/Home/Index/editGmAndSkillRatio
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0009s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: condition E:\www\test\Application\Home\Controller\IndexController.class.php 第 48 行.
+NOTIC: [8] Undefined variable: condition E:\www\test\Application\Home\Controller\IndexController.class.php 第 48 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000566s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000595s ]
+
+[ 2017-07-09T19:45:44+08:00 ] ::1 /test/index.php/Home/Index/editGmAndSkillRatio
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0008s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000630s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000668s ]
+
+[ 2017-07-09T19:47:29+08:00 ] ::1 /test/index.php/Home/Index/editGmAndSkillRatio
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000667s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0007s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0005s ]
+SQL: UPDATE [commission_contact_detail] SET [gm_ratio]='10',[skill_ratio]='20' WHERE [cSOCode] = '132456' AND [contact_id] = 'contact_001' AND [inventory_id] = 'aaaaa' AND [colour] = '黑色' [ RunTime:0.0704s ]
+SQL: UPDATE [commission_contact_detail] SET [gm_ratio]='30',[skill_ratio]='40' WHERE [cSOCode] = '132456' AND [contact_id] = 'contact_001' AND [inventory_id] = 'aaabbb' AND [colour] = '黑色' [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000054s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004715s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000554s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000579s ]
+
+[ 2017-07-09T19:47:30+08:00 ] ::1 /test/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000788s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0005s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006742s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006788s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000598s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000789s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000822s ]
+
+[ 2017-07-09T19:47:50+08:00 ] ::1 /test/index.php/Home/Index/editGmAndSkillRatio
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000560s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0004s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0004s ]
+SQL: UPDATE [commission_contact_detail] SET [gm_ratio]='10',[skill_ratio]='20' WHERE [cSOCode] = '132456' AND [contact_id] = 'contact_001' AND [inventory_id] = 'aaaaa' AND [colour] = '黑色' [ RunTime:0.0006s ]
+SQL: UPDATE [commission_contact_detail] SET [gm_ratio]='30',[skill_ratio]='40' WHERE [cSOCode] = '132456' AND [contact_id] = 'contact_001' AND [inventory_id] = 'aaabbb' AND [colour] = '黑色' [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000053s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004824s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004853s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000548s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000570s ]
+
+[ 2017-07-09T19:47:51+08:00 ] ::1 /test/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000910s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001875s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0007s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007130s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007172s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000670s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000824s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000873s ]
+
+[ 2017-07-09T19:48:34+08:00 ] ::1 /test/index.php/Home/Index/editGmAndSkillRatio
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0005s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0005s ]
+SQL: UPDATE [commission_contact_detail] SET [gm_ratio]='1000',[skill_ratio]='2000' WHERE [cSOCode] = '132456' AND [contact_id] = 'contact_001' AND [inventory_id] = 'aaaaa' AND [colour] = '黑色' [ RunTime:0.0027s ]
+SQL: UPDATE [commission_contact_detail] SET [gm_ratio]='3000',[skill_ratio]='4000' WHERE [cSOCode] = '132456' AND [contact_id] = 'contact_001' AND [inventory_id] = 'aaabbb' AND [colour] = '黑色' [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004973s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005019s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000526s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000550s ]
+
+[ 2017-07-09T19:48:35+08:00 ] ::1 /test/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000701s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001517s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0006s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008353s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008413s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000726s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000896s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000938s ]
+
+[ 2017-07-09T19:49:03+08:00 ] ::1 /test/index.php/Home/Index/editGmAndSkillRatio
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0005s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0004s ]
+SQL: UPDATE [commission_contact_detail] SET [gm_ratio]='0.1',[skill_ratio]='0.2' WHERE [cSOCode] = '132456' AND [contact_id] = 'contact_001' AND [inventory_id] = 'aaaaa' AND [colour] = '黑色' [ RunTime:0.0025s ]
+SQL: UPDATE [commission_contact_detail] SET [gm_ratio]='0.3',[skill_ratio]='0.4' WHERE [cSOCode] = '132456' AND [contact_id] = 'contact_001' AND [inventory_id] = 'aaabbb' AND [colour] = '黑色' [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000050s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004688s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004742s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000577s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000601s ]
+
+[ 2017-07-09T19:49:04+08:00 ] ::1 /test/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001350s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0005s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005492s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005532s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000621s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000648s ]
+
+[ 2017-07-09T19:49:39+08:00 ] ::1 /test/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0005s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013084s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013127s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000554s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000580s ]
+
+[ 2017-07-09T19:49:56+08:00 ] ::1 /test/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0005s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013331s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013373s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000530s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000554s ]
+
+[ 2017-07-09T19:59:53+08:00 ] ::1 /test/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0005s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012731s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012772s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000576s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000607s ]
+
+[ 2017-07-09T20:00:02+08:00 ] ::1 /test/index.php/Home/Index/deleteContact
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000565s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0005s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0004s ]
+SQL: DELETE FROM [commission_contact_detail] WHERE [contact_id] = 'contact_001' [ RunTime:0.0023s ]
+SQL: DELETE FROM [commission_contact_main] WHERE [contact_id] = 'contact_001' [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000049s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004620s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004652s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000511s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000535s ]
+
+[ 2017-07-09T20:00:03+08:00 ] ::1 /test/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000672s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0006s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006041s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006090s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000651s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000682s ]
+
+[ 2017-07-09T20:01:15+08:00 ] ::1 /xlsfunction/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0003s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013756s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013799s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000443s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000466s ]
+
+[ 2017-07-09T20:07:12+08:00 ] ::1 /xlsfunction/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0004s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005941s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000516s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000546s ]
+

@@ -1,0 +1,41 @@
+[ 2017-07-18T00:27:54+08:00 ] ::1 /xlsfunction/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.206789s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015260s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.5551s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0335s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_delivery_history' [ RunTime:0.0237s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.495108s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.495213s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.110175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.110216s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.047108s ]
+INFO: [ app_end ] --END-- [ RunTime:0.047210s ]
+

@@ -1,0 +1,246 @@
+[ 2017-07-15T00:19:12+08:00 ] ::1 /xlsfunction/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.300945s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.062827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.062889s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:2.8296s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.1225s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_delivery_history' [ RunTime:0.0149s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:2.416939s ]
+INFO: [ view_parse ] --END-- [ RunTime:2.417034s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.141797s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.141840s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.053298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.053335s ]
+
+[ 2017-07-15T10:33:37+08:00 ] ::1 /xlsfunction/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007676s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013695s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0324s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0138s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_delivery_history' [ RunTime:0.0137s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.118513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.118563s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.027598s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.027637s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008143s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008215s ]
+
+[ 2017-07-15T10:51:36+08:00 ] ::1 /xlsfunction/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.5337s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0235s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_delivery_history' [ RunTime:0.0221s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006879s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000446s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000468s ]
+
+[ 2017-07-15T10:57:41+08:00 ] ::1 /xlsfunction/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0187s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0154s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_delivery_history' [ RunTime:0.0139s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006154s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006223s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000469s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000493s ]
+
+[ 2017-07-15T16:07:27+08:00 ] ::1 /xlsfunction/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.020960s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.051208s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.051281s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0306s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0147s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_delivery_history' [ RunTime:0.0135s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.261671s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.261715s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.043982s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.044015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015452s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015515s ]
+
+[ 2017-07-15T16:07:27+08:00 ] ::1 /xlsfunction/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.020958s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.051275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.051341s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0004s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0006s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_delivery_history' [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011389s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011425s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000373s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000396s ]
+

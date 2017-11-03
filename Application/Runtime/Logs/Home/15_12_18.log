@@ -1,0 +1,5 @@
+[ 2015-12-18T23:29:13+08:00 ] ::1 /test/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001410s ]
+

@@ -1,0 +1,838 @@
+[ 2015-05-15T00:15:31+08:00 ] ::1 /test/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `test_city` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `test_city`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019865s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019913s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000518s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000565s ]
+
+[ 2015-05-15T00:15:41+08:00 ] ::1 /test/index.php/Home/Index/editContactItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0057s ]
+SQL: UPDATE `test_contact_list` SET `name`='林骥',`first_name`='Leith',`street`='独墅湖高教区',`zip_code`='215000',`city`='苏州' WHERE `id` = 1 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `test_city` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `test_city`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021330s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021379s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000347s ]
+
+[ 2015-05-15T00:15:42+08:00 ] ::1 /test/index.php/Home/Index/exportXML
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0298s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0002s ]
+NOTIC: [2] DOMDocument::save(&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&lt;think&gt;&lt;item id=&quot;0&quot;&gt;&lt;id&gt;1&lt;/id&gt;&lt;name&gt;林骥&lt;/name&gt;&lt;first_name&gt;Leith&lt;/first_name&gt;&lt;street&gt;独墅湖高教区&lt;/street&gt;&lt;zip_code&gt;215000&lt;/zip_code&gt;&lt;city&gt;苏州&lt;/city&gt;&lt;/item&gt;&lt;item id=&quot;1&quot;&gt;&lt;id&gt;13&lt;/id&gt;&lt;name&gt;aa&lt;/name&gt;&lt;first_name&gt;bb&lt;/first_name&gt;&lt;street&gt;cc&lt;/street&gt;&lt;zip_code&gt;dd&lt;/zip_code&gt;&lt;city&gt;福州&lt;/city&gt;&lt;/item&gt;&lt;item id=&quot;2&quot;&gt;&lt;id&gt;14&lt;/id&gt;&lt;name&gt;11&lt;/name&gt;&lt;first_name&gt;22&lt;/first_name&gt;&lt;street&gt;33&lt;/street&gt;&lt;zip_code&gt;44&lt;/zip_code&gt;&lt;city&gt;苏州&lt;/city&gt;&lt;/item&gt;&lt;item id=&quot;3&quot;&gt;&lt;id&gt;15&lt;/id&gt;&lt;name&gt;111&lt;/name&gt;&lt;first_name&gt;222&lt;/first_name&gt;&lt;street&gt;333&lt;/street&gt;&lt;zip_code&gt;444&lt;/zip_code&gt;&lt;city&gt;福州&lt;/city&gt;&lt;/item&gt;&lt;item id=&quot;4&quot;&gt;&lt;id&gt;16&lt;/id&gt;&lt;name&gt;aa&lt;/name&gt;&lt;first_name&gt;22&lt;/first_name&gt;&lt;street&gt;33&lt;/street&gt;&lt;zip_code&gt;444&lt;/zip_code&gt;&lt;city&gt;上海&lt;/city&gt;&lt;/item&gt;&lt;item id=&quot;5&quot;&gt;&lt;id&gt;17&lt;/id&gt;&lt;name&gt;aa&lt;/name&gt;&lt;first_name&gt;22&lt;/first_name&gt;&lt;street&gt;33&lt;/street&gt;&lt;zip_code&gt;444&lt;/zip_code&gt;&lt;city&gt;上海&lt;/city&gt;&lt;/item&gt;&lt;/think&gt;): failed to open stream: Invalid argument E:\www\test\Application\Home\Controller\IndexController.class.php 第 80 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000384s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000411s ]
+
+[ 2015-05-15T00:16:28+08:00 ] ::1 /test/index.php/Home/Index/exportXML
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0002s ]
+NOTIC: [2] DOMDocument::save(&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&lt;think&gt;&lt;item id=&quot;0&quot;&gt;&lt;id&gt;1&lt;/id&gt;&lt;name&gt;林骥&lt;/name&gt;&lt;first_name&gt;Leith&lt;/first_name&gt;&lt;street&gt;独墅湖高教区&lt;/street&gt;&lt;zip_code&gt;215000&lt;/zip_code&gt;&lt;city&gt;苏州&lt;/city&gt;&lt;/item&gt;&lt;item id=&quot;1&quot;&gt;&lt;id&gt;13&lt;/id&gt;&lt;name&gt;aa&lt;/name&gt;&lt;first_name&gt;bb&lt;/first_name&gt;&lt;street&gt;cc&lt;/street&gt;&lt;zip_code&gt;dd&lt;/zip_code&gt;&lt;city&gt;福州&lt;/city&gt;&lt;/item&gt;&lt;item id=&quot;2&quot;&gt;&lt;id&gt;14&lt;/id&gt;&lt;name&gt;11&lt;/name&gt;&lt;first_name&gt;22&lt;/first_name&gt;&lt;street&gt;33&lt;/street&gt;&lt;zip_code&gt;44&lt;/zip_code&gt;&lt;city&gt;苏州&lt;/city&gt;&lt;/item&gt;&lt;item id=&quot;3&quot;&gt;&lt;id&gt;15&lt;/id&gt;&lt;name&gt;111&lt;/name&gt;&lt;first_name&gt;222&lt;/first_name&gt;&lt;street&gt;333&lt;/street&gt;&lt;zip_code&gt;444&lt;/zip_code&gt;&lt;city&gt;福州&lt;/city&gt;&lt;/item&gt;&lt;item id=&quot;4&quot;&gt;&lt;id&gt;16&lt;/id&gt;&lt;name&gt;aa&lt;/name&gt;&lt;first_name&gt;22&lt;/first_name&gt;&lt;street&gt;33&lt;/street&gt;&lt;zip_code&gt;444&lt;/zip_code&gt;&lt;city&gt;上海&lt;/city&gt;&lt;/item&gt;&lt;item id=&quot;5&quot;&gt;&lt;id&gt;17&lt;/id&gt;&lt;name&gt;aa&lt;/name&gt;&lt;first_name&gt;22&lt;/first_name&gt;&lt;street&gt;33&lt;/street&gt;&lt;zip_code&gt;444&lt;/zip_code&gt;&lt;city&gt;上海&lt;/city&gt;&lt;/item&gt;&lt;/think&gt;): failed to open stream: Invalid argument E:\www\test\Application\Home\Controller\IndexController.class.php 第 80 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000381s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000409s ]
+
+[ 2015-05-15T00:17:06+08:00 ] ::1 /test/index.php/Home/Index/exportXML
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0002s ]
+NOTIC: [2] DOMDocument::save(&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&lt;think&gt;&lt;item id=&quot;0&quot;&gt;&lt;id&gt;1&lt;/id&gt;&lt;name&gt;林骥&lt;/name&gt;&lt;first_name&gt;Leith&lt;/first_name&gt;&lt;street&gt;独墅湖高教区&lt;/street&gt;&lt;zip_code&gt;215000&lt;/zip_code&gt;&lt;city&gt;苏州&lt;/city&gt;&lt;/item&gt;&lt;item id=&quot;1&quot;&gt;&lt;id&gt;13&lt;/id&gt;&lt;name&gt;aa&lt;/name&gt;&lt;first_name&gt;bb&lt;/first_name&gt;&lt;street&gt;cc&lt;/street&gt;&lt;zip_code&gt;dd&lt;/zip_code&gt;&lt;city&gt;福州&lt;/city&gt;&lt;/item&gt;&lt;item id=&quot;2&quot;&gt;&lt;id&gt;14&lt;/id&gt;&lt;name&gt;11&lt;/name&gt;&lt;first_name&gt;22&lt;/first_name&gt;&lt;street&gt;33&lt;/street&gt;&lt;zip_code&gt;44&lt;/zip_code&gt;&lt;city&gt;苏州&lt;/city&gt;&lt;/item&gt;&lt;item id=&quot;3&quot;&gt;&lt;id&gt;15&lt;/id&gt;&lt;name&gt;111&lt;/name&gt;&lt;first_name&gt;222&lt;/first_name&gt;&lt;street&gt;333&lt;/street&gt;&lt;zip_code&gt;444&lt;/zip_code&gt;&lt;city&gt;福州&lt;/city&gt;&lt;/item&gt;&lt;item id=&quot;4&quot;&gt;&lt;id&gt;16&lt;/id&gt;&lt;name&gt;aa&lt;/name&gt;&lt;first_name&gt;22&lt;/first_name&gt;&lt;street&gt;33&lt;/street&gt;&lt;zip_code&gt;444&lt;/zip_code&gt;&lt;city&gt;上海&lt;/city&gt;&lt;/item&gt;&lt;item id=&quot;5&quot;&gt;&lt;id&gt;17&lt;/id&gt;&lt;name&gt;aa&lt;/name&gt;&lt;first_name&gt;22&lt;/first_name&gt;&lt;street&gt;33&lt;/street&gt;&lt;zip_code&gt;444&lt;/zip_code&gt;&lt;city&gt;上海&lt;/city&gt;&lt;/item&gt;&lt;/think&gt;): failed to open stream: Invalid argument E:\www\test\Application\Home\Controller\IndexController.class.php 第 80 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000385s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000425s ]
+
+[ 2015-05-15T00:23:34+08:00 ] ::1 /test/index.php/Home/Index/exportXML
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000290s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0002s ]
+NOTIC: [2] DOMDocument::save(&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&lt;think&gt;&lt;item id=&quot;0&quot;&gt;&lt;id&gt;1&lt;/id&gt;&lt;name&gt;林骥&lt;/name&gt;&lt;first_name&gt;Leith&lt;/first_name&gt;&lt;street&gt;独墅湖高教区&lt;/street&gt;&lt;zip_code&gt;215000&lt;/zip_code&gt;&lt;city&gt;苏州&lt;/city&gt;&lt;/item&gt;&lt;item id=&quot;1&quot;&gt;&lt;id&gt;13&lt;/id&gt;&lt;name&gt;aa&lt;/name&gt;&lt;first_name&gt;bb&lt;/first_name&gt;&lt;street&gt;cc&lt;/street&gt;&lt;zip_code&gt;dd&lt;/zip_code&gt;&lt;city&gt;福州&lt;/city&gt;&lt;/item&gt;&lt;item id=&quot;2&quot;&gt;&lt;id&gt;14&lt;/id&gt;&lt;name&gt;11&lt;/name&gt;&lt;first_name&gt;22&lt;/first_name&gt;&lt;street&gt;33&lt;/street&gt;&lt;zip_code&gt;44&lt;/zip_code&gt;&lt;city&gt;苏州&lt;/city&gt;&lt;/item&gt;&lt;item id=&quot;3&quot;&gt;&lt;id&gt;15&lt;/id&gt;&lt;name&gt;111&lt;/name&gt;&lt;first_name&gt;222&lt;/first_name&gt;&lt;street&gt;333&lt;/street&gt;&lt;zip_code&gt;444&lt;/zip_code&gt;&lt;city&gt;福州&lt;/city&gt;&lt;/item&gt;&lt;item id=&quot;4&quot;&gt;&lt;id&gt;16&lt;/id&gt;&lt;name&gt;aa&lt;/name&gt;&lt;first_name&gt;22&lt;/first_name&gt;&lt;street&gt;33&lt;/street&gt;&lt;zip_code&gt;444&lt;/zip_code&gt;&lt;city&gt;上海&lt;/city&gt;&lt;/item&gt;&lt;item id=&quot;5&quot;&gt;&lt;id&gt;17&lt;/id&gt;&lt;name&gt;aa&lt;/name&gt;&lt;first_name&gt;22&lt;/first_name&gt;&lt;street&gt;33&lt;/street&gt;&lt;zip_code&gt;444&lt;/zip_code&gt;&lt;city&gt;上海&lt;/city&gt;&lt;/item&gt;&lt;/think&gt;): failed to open stream: Invalid argument E:\www\test\Application\Home\Controller\IndexController.class.php 第 80 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000376s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000404s ]
+
+[ 2015-05-15T00:24:03+08:00 ] ::1 /test/index.php/Home/Index/exportXML
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0337s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000341s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000385s ]
+
+[ 2015-05-15T00:24:47+08:00 ] ::1 /test/index.php/Home/Index/exportXML
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001551s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0003s ]
+NOTIC: [4096] Argument 1 passed to DOMDocument::saveXML() must be an instance of DOMNode, string given E:\www\test\Application\Home\Controller\IndexController.class.php 第 79 行.
+NOTIC: [2] DOMDocument::saveXML() expects parameter 1 to be DOMNode, string given E:\www\test\Application\Home\Controller\IndexController.class.php 第 79 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000522s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000590s ]
+
+[ 2015-05-15T00:27:54+08:00 ] ::1 /test/index.php/Home/Index/exportXML
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant Response - assumed 'Response' E:\www\test\Application\Home\Controller\IndexController.class.php 第 79 行.
+
+[ 2015-05-15T00:29:13+08:00 ] ::1 /test/index.php/Home/Index/exportXML
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0145s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000470s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000531s ]
+
+[ 2015-05-15T00:30:23+08:00 ] ::1 /test/index.php/Home/Index/exportXML
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000804s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001125s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0164s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001355s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001526s ]
+
+[ 2015-05-15T00:30:51+08:00 ] ::1 /test/index.php/Home/Index/exportXML
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000389s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000422s ]
+
+[ 2015-05-15T00:33:19+08:00 ] ::1 /test/index.php/Home/Index/exportXML
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000749s ]
+
+[ 2015-05-15T00:33:35+08:00 ] ::1 /test/index.php/Home/Index/exportXML
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000312s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000470s ]
+
+[ 2015-05-15T00:35:34+08:00 ] ::1 /test/index.php/Home/Index/exportXML
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000486s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000573s ]
+
+[ 2015-05-15T00:37:43+08:00 ] ::1 /test/index.php/Home/Index/editContactItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001269s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0125s ]
+SQL: UPDATE `test_contact_list` SET `name`='林骥',`first_name`='Leith',`street`='独墅湖高教区',`zip_code`='215000',`city`='苏州' WHERE `id` = 1 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `test_city` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `test_city`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.095843s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.095924s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000701s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000762s ]
+
+[ 2015-05-15T00:37:44+08:00 ] ::1 /test/index.php/Home/Index/exportXML
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000491s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000545s ]
+
+[ 2015-05-15T00:38:16+08:00 ] ::1 /test/index.php/Home/Index/exportXML
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000686s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000744s ]
+
+[ 2015-05-15T00:38:21+08:00 ] ::1 /test/index.php/Home/Index/exportXML
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000355s ]
+
+[ 2015-05-15T00:38:40+08:00 ] ::1 /test/index.php/Home/Index/editContactItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000961s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0141s ]
+SQL: UPDATE `test_contact_list` SET `name`='林骥',`first_name`='Leith',`street`='独墅湖高教区',`zip_code`='215000',`city`='苏州' WHERE `id` = 1 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `test_city` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `test_city`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025826s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025868s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000312s ]
+
+[ 2015-05-15T00:38:40+08:00 ] ::1 /test/index.php/Home/Index/exportXML
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000270s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0001s ]
+
+[ 2015-05-15T00:39:11+08:00 ] ::1 /test/index.php/Home/Index/editContactItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0105s ]
+SQL: UPDATE `test_contact_list` SET `name`='林骥',`first_name`='Leith',`street`='独墅湖高教区',`zip_code`='215000',`city`='苏州' WHERE `id` = 1 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `test_city` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `test_city`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000244s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000359s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026455s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026562s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000536s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000571s ]
+
+[ 2015-05-15T00:39:12+08:00 ] ::1 /test/index.php/Home/Index/exportXML
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000337s ]
+
+[ 2015-05-15T00:39:33+08:00 ] ::1 /test/index.php/Home/Index/exportXML
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000803s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001109s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0163s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000717s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000785s ]
+
+[ 2015-05-15T00:40:07+08:00 ] ::1 /test/index.php/Home/Index/editContactItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0327s ]
+SQL: UPDATE `test_contact_list` SET `name`='林骥',`first_name`='Leith',`street`='独墅湖高教区',`zip_code`='215000',`city`='苏州' WHERE `id` = 1 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `test_city` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `test_city`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035088s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035132s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000161s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000320s ]
+
+[ 2015-05-15T00:40:08+08:00 ] ::1 /test/index.php/Home/Index/exportXML
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000401s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000444s ]
+
+[ 2015-05-15T00:41:03+08:00 ] ::1 /test/index.php/Home/Index/exportXML
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000800s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001164s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0162s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000799s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000876s ]
+
+[ 2015-05-15T00:41:17+08:00 ] ::1 /test/index.php/Home/Index/exportXML
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0142s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000499s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000532s ]
+
+[ 2015-05-15T00:41:50+08:00 ] ::1 /test/index.php/Home/Index/exportXML
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001186s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0144s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000453s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000514s ]
+
+[ 2015-05-15T00:42:25+08:00 ] ::1 /test/index.php/Home/Index/exportXML
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000575s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0373s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000348s ]
+
+[ 2015-05-15T00:45:31+08:00 ] ::1 /test/index.php/Home/Index/exportXML
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0462s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000576s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000620s ]
+
+[ 2015-05-15T00:45:57+08:00 ] ::1 /test/index.php/Home/Index/exportXML
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001506s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001158s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0177s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000714s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000781s ]
+
+[ 2015-05-15T00:46:02+08:00 ] ::1 /test/index.php/Home/Index/exportXML
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000821s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001084s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001218s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000634s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000699s ]
+
+[ 2015-05-15T00:46:10+08:00 ] ::1 /test/index.php/Home/Index/exportXML
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000560s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000687s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000755s ]
+
+[ 2015-05-15T00:46:41+08:00 ] ::1 /test/index.php/Home/Index/exportXML
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0151s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000333s ]
+
+[ 2015-05-15T00:47:04+08:00 ] ::1 /test/index.php/Home/Index/exportXML
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000436s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000467s ]
+
+[ 2015-05-15T00:48:05+08:00 ] ::1 /test/index.php/Home/Index/exportXML
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0233s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000336s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000362s ]
+
+[ 2015-05-15T00:48:15+08:00 ] ::1 /test/index.php/Home/Index/exportXML
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000417s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000458s ]
+
+[ 2015-05-15T00:55:18+08:00 ] ::1 /test/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000308s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0098s ]
+SQL: SHOW COLUMNS FROM `test_city` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `test_city`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038871s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000343s ]
+
+[ 2015-05-15T00:55:21+08:00 ] ::1 /test/index.php/Home/Index/editContactItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000300s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0057s ]
+SQL: UPDATE `test_contact_list` SET `name`='林骥',`first_name`='Leith',`street`='独墅湖高教区',`zip_code`='215000',`city`='苏州' WHERE `id` = 1 [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `test_city` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `test_city`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000237s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019542s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019575s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000399s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000439s ]
+
+[ 2015-05-15T00:55:32+08:00 ] ::1 /test/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0085s ]
+SQL: SHOW COLUMNS FROM `test_city` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `test_city`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033976s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034023s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000266s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000291s ]
+
+[ 2015-05-15T01:04:35+08:00 ] ::1 /test/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000300s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0092s ]
+SQL: SHOW COLUMNS FROM `test_city` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `test_city`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032806s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032888s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000330s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000369s ]
+
+[ 2015-05-15T01:04:37+08:00 ] ::1 /test/index.php/Home/Index/exportXML
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000359s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000407s ]
+
+[ 2015-05-15T01:04:55+08:00 ] ::1 /test/index.php/Home/Index/deleteContactListItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000813s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0238s ]
+SQL: DELETE FROM `test_contact_list` WHERE `id` = 17 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `test_city` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `test_city`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023123s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023166s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000265s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000294s ]
+
+[ 2015-05-15T01:04:55+08:00 ] ::1 /test/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000280s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `test_city` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `test_city`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019843s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019885s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000251s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000275s ]
+
+[ 2015-05-15T01:05:07+08:00 ] ::1 /test/index.php/Home/Index/addContactItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000276s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0069s ]
+SQL: INSERT INTO `test_contact_list` (`name`,`first_name`,`street`,`zip_code`,`city`) VALUES ('dsa','dsad','dsad','12','福州') [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `test_city` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `test_city`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021673s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021713s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000239s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000266s ]
+
+[ 2015-05-15T01:05:10+08:00 ] ::1 /test/index.php/Home/Index/exportXML
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000264s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000346s ]
+
+[ 2015-05-15T01:06:38+08:00 ] ::1 /test/index.php/Home/Index/exportXML
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000875s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000923s ]
+
+[ 2015-05-15T01:07:34+08:00 ] ::1 /test/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000289s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `test_city` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `test_city`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019690s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019737s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000248s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000286s ]
+
+[ 2015-05-15T01:07:42+08:00 ] ::1 /test/index.php/Home/Index/editContactItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000302s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0348s ]
+SQL: UPDATE `test_contact_list` SET `name`='林骥',`first_name`='Leith',`street`='独墅湖高教区',`zip_code`='215000',`city`='苏州' WHERE `id` = 1 [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `test_city` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `test_city`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022652s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022693s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000274s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000304s ]
+
+[ 2015-05-15T01:07:50+08:00 ] ::1 /test/index.php/Home/Index/exportXML
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000295s ]
+SQL: SHOW COLUMNS FROM `test_contact_list` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `test_contact_list`  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000379s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000423s ]
+

@@ -1,0 +1,296 @@
+[ 2017-07-11T19:11:17+08:00 ] ::1 /xlsfunction/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.127463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.059153s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.059250s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0638s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.500416s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.500489s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.052616s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.052649s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.064727s ]
+INFO: [ app_end ] --END-- [ RunTime:0.064833s ]
+
+[ 2017-07-11T19:11:26+08:00 ] ::1 /xlsfunction/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0004s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012956s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000383s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000406s ]
+
+[ 2017-07-11T19:27:05+08:00 ] ::1 /xlsfunction/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010962s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0004s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092578s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092619s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008070s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005590s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005618s ]
+
+[ 2017-07-11T19:27:19+08:00 ] ::1 /xlsfunction/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0005s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015263s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015307s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000381s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000405s ]
+
+[ 2017-07-11T19:27:20+08:00 ] ::1 /xlsfunction/index.php/Home/Index/editDeliveryQuantity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0005s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0004s ]
+ERR: 非法操作:editDeliveryQuantity
+
+[ 2017-07-11T19:36:00+08:00 ] ::1 /xlsfunction/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0004s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017682s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017725s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000679s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000707s ]
+
+[ 2017-07-11T19:36:10+08:00 ] ::1 /xlsfunction/index.php/Home/Index/editDeliveryQuantity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0003s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0004s ]
+SQL: UPDATE [commission_contact_detail] SET [delivery_quantity]='100' WHERE [cSOCode] = '132456' AND [contact_id] = 'contact_001' AND [inventory_id] = '123456' AND [colour] = '黑色' [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000056s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031465s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031550s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000711s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000496s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000521s ]
+
+[ 2017-07-11T19:36:11+08:00 ] ::1 /xlsfunction/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001077s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0007s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005555s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005588s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000536s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000568s ]
+
+[ 2017-07-11T19:47:19+08:00 ] ::1 /xlsfunction/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_main' [ RunTime:0.0003s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'commission_contact_detail' [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005369s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005401s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000453s ]
+

@@ -1,0 +1,17 @@
+[ 2015-07-22T13:31:51+08:00 ] ::1 /test/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.031569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.031636s ]
+NOTIC: [8] A non well formed numeric value encountered E:\www\test\Application\Home\Controller\IndexController.class.php 第 11 行.
+
+[ 2015-07-22T13:34:23+08:00 ] ::1 /test/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000280s ]
+
