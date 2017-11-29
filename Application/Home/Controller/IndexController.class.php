@@ -142,14 +142,6 @@ class IndexController extends Controller {
 			}
 		}
 		foreach ($arr_data as $key => $value) {
-			/*$str = $value['C'] + " ansible_host=" +$value['B'];*/
-			print_r($value['C']);
-			print_r(" ansible_host=");
-			print_r($value['B']);
-			print_r("<br/>");
-		}
-		exit;
-		foreach ($arr_data as $key => $value) {
 			if($value['B'] == null || $value['B'] == ""){
 				continue;
 			}
@@ -218,4 +210,45 @@ class IndexController extends Controller {
 		}
 	$this -> success("导入成功！");
 	}
+
+    public function importDeliveryQuantityMoney(){
+        $excel_name = $_FILES['excel_file']['name'];
+        $index = stripos($excel_name, ".");
+        if (strtolower(substr($excel_name, $index + 1)) != "xls" && strtolower(substr($excel_name, $index + 1)) != "xlsx") {
+            $this -> error("上传文件格式出错");
+        }
+        vendor('PHPExcel.PHPExcel');
+        Vendor('PHPExcel.PHPExcel.IOFactory');
+        Vendor('PHPExcel.PHPExcel.Reader.Excel5.php');
+        $PHPReader = new \PHPExcel_Reader_Excel5();
+        $PHPexcel = new \PHPExcel();
+        $excel_obj = $_FILES['excel_file']['tmp_name'];
+        $PHPExcel_obj = $PHPReader -> load($excel_obj);
+        $currentSheet = $PHPExcel_obj -> getSheet(0);
+        $highestColumn = $currentSheet -> getHighestColumn();
+        $highestRow = $currentSheet -> getHighestRow();
+        $arr_data = array();
+        for ($j = 2; $j <= $highestRow; $j++)
+        {
+            for ($k = 'B'; $k <= $highestColumn; $k++)
+            {
+                $arr_data[$j][$k] = (string)$PHPExcel_obj -> getActiveSheet() -> getCell("$k$j") -> getValue();
+            }
+        }
+        foreach ($arr_data as $key => $value) {
+            if($value['B'] == null || $value['B'] == ""){
+                continue;
+            }
+            $condition = array();
+            $condition['contact_id'] = $value['B'];
+            $condition['cSOCode'] = $value['C'];
+            $condition['sale_quantity'] = $value['D'];
+            $condition['sale_price'] = $value['E'];
+            $data = array();
+            $data['delivery_quantity'] = $value['F'];
+            $data['delivery_money'] = $value['G'];
+            $this -> db_contact_detail ->where($condition)->save($data);
+        }
+        $this -> success("更新发货数量发货金额成功！");
+    }
 }
