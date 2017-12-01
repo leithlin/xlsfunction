@@ -241,7 +241,7 @@ class IndexController extends Controller {
             }
             $condition = array();
             $condition['contact_id'] = $value['B'];
-            $condition['cSOCode'] = $value['C'];
+            $condition['inventory_id'] = $value['C'];
             $condition['sale_quantity'] = $value['D'];
             $condition['sale_price'] = $value['E'];
             $data = array();
