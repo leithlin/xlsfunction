@@ -251,4 +251,45 @@ class IndexController extends Controller {
         }
         $this -> success("更新发货数量发货金额成功！");
     }
+    public function importCostPriceAdjust(){
+        $excel_name = $_FILES['excel_file']['name'];
+        $index = stripos($excel_name, ".");
+        if (strtolower(substr($excel_name, $index + 1)) != "xls" && strtolower(substr($excel_name, $index + 1)) != "xlsx") {
+            $this -> error("上传文件格式出错");
+        }
+        vendor('PHPExcel.PHPExcel');
+        Vendor('PHPExcel.PHPExcel.IOFactory');
+        Vendor('PHPExcel.PHPExcel.Reader.Excel5.php');
+        $PHPReader = new \PHPExcel_Reader_Excel5();
+        $PHPexcel = new \PHPExcel();
+        $excel_obj = $_FILES['excel_file']['tmp_name'];
+        $PHPExcel_obj = $PHPReader -> load($excel_obj);
+        $currentSheet = $PHPExcel_obj -> getSheet(0);
+        $highestColumn = $currentSheet -> getHighestColumn();
+        $highestRow = $currentSheet -> getHighestRow();
+        $arr_data = array();
+        for ($j = 2; $j <= $highestRow; $j++)
+        {
+            for ($k = 'B'; $k <= $highestColumn; $k++)
+            {
+                $arr_data[$j][$k] = (string)$PHPExcel_obj -> getActiveSheet() -> getCell("$k$j") -> getValue();
+            }
+        }
+        foreach ($arr_data as $key => $value) {
+            if($value['B'] == null || $value['B'] == ""){
+                continue;
+            }
+            $condition = array();
+            $condition['contact_id'] = $value['B'];
+            $condition['inventory_id'] = $value['C'];
+            $condition['colour'] = $value['D'];
+            $condition['coreColour'] = $value['E'];
+            $condition['sale_quantity'] = $value['F'];
+            $condition['sale_price'] = $value['G'];
+            $data = array();
+            $data['cost_price_adjust'] = $value['H'];
+            $this -> db_contact_detail ->where($condition)->save($data);
+        }
+        $this -> success("更新调整底价成功！");
+    }
 }
