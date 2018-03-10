@@ -292,4 +292,53 @@ class IndexController extends Controller {
         }
         $this -> success("更新调整底价成功！");
     }
+    public function editCostPriceAdjust(){
+        $excel_name = $_FILES['excel_file']['name'];
+        $index = stripos($excel_name, ".");
+        if (strtolower(substr($excel_name, $index + 1)) != "xls" && strtolower(substr($excel_name, $index + 1)) != "xlsx") {
+            $this -> error("上传文件格式出错");
+        }
+        vendor('PHPExcel.PHPExcel');
+        Vendor('PHPExcel.PHPExcel.IOFactory');
+        Vendor('PHPExcel.PHPExcel.Reader.Excel5.php');
+        $PHPReader = new \PHPExcel_Reader_Excel5();
+        $PHPexcel = new \PHPExcel();
+        $excel_obj = $_FILES['excel_file']['tmp_name'];
+        $PHPExcel_obj = $PHPReader -> load($excel_obj);
+        $currentSheet = $PHPExcel_obj -> getSheet(0);
+        $highestColumn = $currentSheet -> getHighestColumn();
+        $highestRow = $currentSheet -> getHighestRow();
+        $arr_data = array();
+        for ($j = 2; $j <= $highestRow; $j++)
+        {
+            for ($k = 'B'; $k <= $highestColumn; $k++)
+            {
+                $arr_data[$j][$k] = (string)$PHPExcel_obj -> getActiveSheet() -> getCell("$k$j") -> getValue();
+            }
+        }
+        foreach ($arr_data as $key => $value) {
+            if($value['B'] == null || $value['B'] == ""){
+                continue;
+            }
+            $condition_main = array();
+            $condition_main['salesman_id'] = $value['B'];
+            $condition_main['settlement'] = 1;
+            $condition_main['settling'] = 1;
+            $condition_main['settled'] = 0;
+            $contact_main = $this -> db_contact_main -> where($condition_main) -> select();
+            foreach ($contact_main as $kk => $vv){
+                $condition_detail = array();
+                $condition_detail['contact_id'] = $vv['contact_id'];
+                $contact_detail = $this -> db_contact_detail -> where($condition_detail) -> select();
+                foreach ($contact_detail as $kkk => $vvv){
+                    $data = array();
+                    $data_condition = array();
+                    $data_condition['id'] = $vvv['id'];
+                    $data['cost_price_adjust'] = $vvv['cost_price_adjust'] + $vvv['cost_price'] - $vvv['end_cost_price'];
+                    $this -> db_contact_detail -> where($data_condition) -> save($data);
+                }
+            }
+        }
+        $this -> success("更新调整底价成功！");
+    }
 }
