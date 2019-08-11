@@ -206,6 +206,7 @@ class IndexController extends Controller {
 			$contact_detail['gm_ratio'] = $value['U'] * 0.01;
 			$contact_detail['skill_ratio'] = $value['V'] * 0.01;
 			$contact_detail['custom_fee'] = $value['W'];
+            $contact_detail['last_delivery_date'] = $value['X'];
 			$this -> db_contact_detail -> addItem($contact_detail);
 		}
 	$this -> success("导入成功！");
@@ -247,6 +248,7 @@ class IndexController extends Controller {
             $data = array();
             $data['delivery_quantity'] = $value['F'];
             $data['delivery_money'] = $value['G'];
+            $data['last_delivery_date'] = $value['H'];
             $this -> db_contact_detail ->where($condition)->save($data);
         }
         $this -> success("更新发货数量发货金额成功！");
